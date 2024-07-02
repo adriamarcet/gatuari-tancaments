@@ -1,11 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import IndexHeader from "../layouts/IndexHeader.astro";
+import IndexKPI from "../layouts/IndexKPI.astro";
+import IndexFAQ from "../layouts/IndexFAQ.astro";
+import IndexCarousel from "../layouts/IndexCarousel.astro";
 ---
 
 <BaseLayout>
-  <h1
-    class="text-3xl font-bold font-noto justify-center text-center py-14 px-6"
-  >
-    Protege su Curiosidad, Asegura su Hogar y Bienestar
-  </h1>
+  <IndexHeader />
+  <IndexKPI />
+  <IndexCarousel />
+  <IndexFAQ />
 </BaseLayout>

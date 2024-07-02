@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import myImage from "../../public/img/home_terrassa.jpg";
+---
+
+<header class="max-w-5xl mx-auto">
+  <h1
+    class="text-3xl font-bold font-noto justify-center text-center py-14 px-6 lg:text-6xl lg:px-0 lg:py-20"
+  >
+    Protege su curiosidad, asegura su hogar y bienestar
+  </h1>
+  <p class="font-roboto px-4 lg:px-0 lg:text-xl text-center text-lg leading-6">
+    Barreras y sistemas de protección para balcones y ventanas, diseñados para
+    la seguridad de tus gatos.
+  </p>
+  <div class="px-6 py-12">
+    <Image
+      class="rounded-xl overflow-hidden mx-auto lg:aspect-4/3 lg:object-cover lg:animate-scaledown lg:origin-center lg:scale-105"
+      src={myImage}
+      alt="Fotografía de un balcon en Barcelona que tiene una malla de seguridad instalado para que no se escapen los gatos del habitaculo."
+    />
+  </div>
+</header>

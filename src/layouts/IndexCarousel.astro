@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import myImage1 from "../../public/img/carousel_vertical_01.webp";
+import myImage2 from "../../public/img/carousel_vertical_02.webp";
+import myImage3 from "../../public/img/carousel_vertical_03.webp";
+import myImage4 from "../../public/img/carousel_vertical_04.webp";
+---
+
+<section class="max-w-5xl mx-auto">
+  <!-- <h2
+    class="p-10 pb-4 text-2xl font-noto text-center lg:text-3xl lg:py-40 lg:pb-20"
+  > -->
+  <h2 class="font-noto p-6 pb-12 text-2xl lg:text-3xl text-center">
+    Ya es hora que tanto tú como tu gato aprovechéis juntos ese espacio exterior
+    sin preocupaciones.
+  </h2>
+  <div
+    class="pl-5 lg:pl-0 aspect-3/4 lg:aspect-4/3 snap-x flex gap-6 max-w-7xl lg:max-w-4xl mx-auto overflow-x-auto snap-type-x-mandatory snap-mandatory snap-align-start snap-scroll-padding"
+  >
+    <div class="snap-center min-w-[80%] lg:min-w-[95%]">
+      <Image
+        class="rounded-xl overflow-hidden lg:aspect-4/3 object-cover h-full"
+        src={myImage1}
+        alt=""
+      />
+    </div>
+    <div class="snap-center min-w-[80%] lg:min-w-[95%]">
+      <Image
+        class="rounded-xl overflow-hidden lg:aspect-4/3 object-cover h-full"
+        src={myImage2}
+        alt=""
+      />
+    </div>
+    <div class="snap-center min-w-[80%] lg:min-w-[95%]">
+      <Image
+        class="rounded-xl overflow-hidden lg:aspect-4/3 object-cover h-full"
+        src={myImage3}
+        alt=""
+      />
+    </div>
+    <div class="snap-center min-w-[80%] lg:min-w-[95%]">
+      <Image
+        class="rounded-xl overflow-hidden lg:aspect-4/3 object-cover h-full"
+        src={myImage4}
+        alt=""
+      />
+    </div>
+  </div>
+</section>
