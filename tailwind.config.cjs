@@ -50,6 +50,7 @@ module.exports = {
       },
       fontFamily: {
         "noto": ["Noto Serif Display", 'serif'],
+        "notosans": ["Noto Sans", 'sans-serif'],
         "roboto": ["Roboto", 'sans-serif']
       },
     },

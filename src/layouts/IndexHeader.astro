@@ -3,20 +3,23 @@ import { Image } from "astro:assets";
 import myImage from "../../public/img/home_terrassa.jpg";
 ---
 
-<header class="max-w-5xl mx-auto">
-  <h1
-    class="text-3xl font-bold font-noto justify-center text-center py-14 px-6 lg:text-6xl lg:px-0 lg:py-20"
-  >
-    Protege su curiosidad, asegura su hogar y bienestar
-  </h1>
-  <p class="font-roboto px-4 lg:px-0 lg:text-xl text-center text-lg leading-6">
-    Barreras y sistemas de protección para balcones y ventanas, diseñados para
-    la seguridad de tus gatos.
-  </p>
-  <div class="px-6 py-12">
+<header
+  class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 px-4 md:px-8 lg:px-16"
+>
+  <div class="text-center md:text-left">
+    <h1 class="font-notosans text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
+      Protege su curiosidad, asegura su hogar y bienestar
+    </h1>
+    <p class="text-lg lg:text-xl text-gray-600">
+      Barreras y sistemas de protección para balcones y ventanas, diseñados para
+      la seguridad de tus gatos.
+    </p>
+  </div>
+
+  <div>
     <Image
-      class="rounded-xl overflow-hidden mx-auto lg:aspect-4/3 lg:object-cover lg:animate-scaledown lg:origin-center lg:scale-105"
       src={myImage}
+      class="w-full h-auto rounded-lg shadow-lg"
       alt="Fotografía de un balcon en Barcelona que tiene una malla de seguridad instalado para que no se escapen los gatos del habitaculo."
     />
   </div>
