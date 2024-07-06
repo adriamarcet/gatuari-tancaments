@@ -14,7 +14,22 @@
       tus gatos. Si tienes alguna consulta o necesitas ayuda, completa el
       formulario de contacto y te asistiremos con gusto.
     </p>
-    <form class="mx-auto pt-10">
+    <form
+      class="mx-auto pt-10"
+      netlify-honeypot="cazodemiel"
+      method="POST"
+      data-netlify="true"
+      name="contact"
+      action="{{ link('thank_you#thanks_message') }}"
+    >
+      <input name="cazodemiel" hidden />
+      <input
+        type="text"
+        name="subject"
+        value="Contacto web: {{ contactEmail }} rellenó el formulario desde Tancaments"
+        hidden
+      />
+
       <div class="mb-5">
         <label
           for="email-address-icon"
