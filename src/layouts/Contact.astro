@@ -16,18 +16,18 @@
     </p>
     <form
       class="mx-auto pt-10"
-      netlify-honeypot="cazodemiel"
       method="POST"
-      data-netlify="true"
-      name="contact"
-      action="{{ link('thank_you#thanks_message') }}"
+      name="mainContactForm"
+      enctype="multipart/form-data"
+      netlify-honeypot="cazodemiel"
       data-netlify="true"
     >
       <input name="cazodemiel" hidden />
+
       <input
         type="text"
         name="subject"
-        value="Contacto web: {{ contactEmail }} rellenó el formulario desde Tancaments"
+        value="Contacto web: rellenó el formulario desde Tancaments"
         hidden
       />
 
@@ -44,6 +44,19 @@
             class="rounded-lg block w-full p-2.5"
           />
         </div>
+      </div>
+      <div class="mb-5">
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          for="file_input"
+          >Si quieres puedes añadir fotografías de la zona del inmueble que
+          quieres asegurar</label
+        >
+        <input
+          class="p-6 block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+          id="file_input"
+          type="file"
+        />
       </div>
       <div class="mb-5">
         <label for="message" class="block mb-2 text-white">Comentaris</label>
