@@ -1,54 +1,58 @@
-# Astro Starter Kit: Basics
+**Gatuari Tancaments**
 
-```sh
-npm create astro@latest -- --template basics
+Site files for Gatuar Tancaments landing page.
+
+**Purpose:** This repo contains the site source (pages, components and layouts) used to present information for the Gatuari Tancaments project. It's an Astro site that uses Tailwind for styling and a small component set under `src/components` and `src/layouts`.
+
+**Quick Start**
+
+- **Prerequisites:** Node.js 18+ installed and `npm` available.
+- **Install dependencies:**
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+- **Run development server:**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The dev server runs on `http://localhost:4321` by default.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Build for production:**
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+npm run build
+```
 
-## 🧞 Commands
+- **Preview the production build locally:**
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm run preview
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+**Project Structure**
 
-## 👀 Want to learn more?
+- **`public/`**: Static assets (images, favicon, webmanifest). Files here are served as-is.
+- **`src/pages/`**: Top-level routes. Edit `src/pages/index.astro` to change the homepage content.
+- **`src/layouts/`**: Page layout components used across pages (e.g. `BaseLayout.astro`, `Contact.astro`).
+- **`src/components/`**: Reusable UI components (header, footer, accordion, carousel, KPI block).
+- **`src/styles/`**: Global CSS and design variables (`globals.css`, `variables.css`).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Notable files and folders:
+
+- `src/components/Header/header.astro` and `src/components/Footer/footer.astro`: Global header and footer markup.
+- `src/layouts/BaseLayout.astro`: Main site layout wrapping pages.
+- `src/layouts/IndexHeader.astro`, `IndexCarousel.astro`, `IndexFAQ.astro`, `IndexKPI.astro`: Homepage sections.
+
+**How to edit content**
+
+- Homepage: edit `src/pages/index.astro` and the index-specific layout/sections in `src/layouts/`.
+- Reusable content: update or add components in `src/components/` and include them in layouts or pages.
+- Styles: change color variables in `src/styles/variables.css` or add utility classes in `src/styles/globals.css`.
+
+**Tailwind**
+
+Tailwind is configured in `tailwind.config.cjs`. Customize utilities and theme values there.
