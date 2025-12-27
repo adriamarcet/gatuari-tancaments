@@ -1,6 +1,6 @@
 **Gatuari Tancaments**
 
-Site files for Gatuar Tancaments landing page.
+Site files for Gatuari Tancaments landing page.
 
 **Purpose:** This repo contains the site source (pages, components and layouts) used to present information for the Gatuari Tancaments project. It's an Astro site that uses Tailwind for styling and a small component set under `src/components` and `src/layouts`.
 
@@ -10,6 +10,7 @@ Site files for Gatuar Tancaments landing page.
 - **Install dependencies:**
 
 ```bash
+nvm use
 npm install
 ```
 
